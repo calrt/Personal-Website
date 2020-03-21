@@ -1,55 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Callum Thompson - Developer</title>
+  <title>Callum Thompson - Web Developer</title>
   <link rel="stylesheet" type="text/css" href="./styles.css" />
   <link rel="icon" type="image/gif" href="./assets/favicon.ico" />
-
 </head>
+
 <body>
   <div id="container">
     <div id="content">
       <p>
         <h3>Hey <span class="wave">👋🏻</span></h3>
         <h1>I'm Callum Thompson</h1>
-        <h2>a
-        <span class="roles">
-          <script defer>
-            console.log("I hope you like what you see! Think something could be improved? I'd love to hear your feedback via email.")
-            var i = 0
-            const rolesDiv = document.querySelector(".roles")
-            rolesDiv.innerHTML = ""
-
-            const roles = [
-              "",
-              "Kiwi",
-              "Runner",
-              "Tech Enthusiast",
-              "Musician",
-              "Traveller",
-              "<u>Full-Stack Developer</u>"
-            ]
-            
-            const roleRun = () => {
-              setInterval(function(){
-              if(i < roles.length){
-                rolesDiv.innerHTML = roles[i]
-                i++
-              }
-             }, 550)}
-
-            setTimeout(roleRun(), 3000)
-
-          </script>
-        <span class="roles">
-
-        </h2>
-        <h2>Based in Melbourne, Australia.</a></h2>
-
+        <h2>a <span class="role">Kiwi</span></h2>
+        <h2>based in Melbourne, Australia.</a></h2>
         <ul>
           <li>✉️ <a href="mailto:callumrthompson@me.com">Get in touch</a></li>
           <li>👥 <a href="https://www.linkedin.com/in/callumthompson/" target="_blank">Connect on LinkedIn</a></li>
@@ -60,3 +27,34 @@
   </div>
 </body>
 </html>
+
+<script>
+  console.log("I hope you like what you see! Think something could be improved? I'd love to hear your feedback via email.")
+
+  var roleSpan = document.querySelector(".role");
+  var wave = document.querySelector(".wave");
+
+  var roles = [
+    "Runner",
+    "Tech Enthusiast",
+    "Musician",
+    "Traveller",
+    "<u>Web Developer</u>"
+  ];
+
+  var i = 0;
+  
+  var roleRun = function () {
+    if(i < roles.length) {
+      roleSpan.innerHTML = roles[i];
+      i++;
+    } else {
+      wave.classList.add("animate-wave")
+    }
+  }
+
+  window.addEventListener('load', function() {
+    document.body.classList.add("visible")
+    setTimeout(setInterval, 350, roleRun, 1000)
+  })
+</script>
