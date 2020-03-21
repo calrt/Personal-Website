@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta description="Callum Thompson is a web developer based in Melbourne, Australia. Check out his Github, find out where he's currently working, or get in touch!">
   <title>Callum Thompson - Web Developer</title>
   <link rel="stylesheet" type="text/css" href="./styles.css" />
   <link rel="icon" type="image/gif" href="./assets/favicon.ico" />
@@ -18,7 +19,7 @@
         <h2>a <span class="role">Kiwi</span></h2>
         <h2>based in Melbourne, Australia.</a></h2>
         <ul>
-          <li>✉️ <a href="mailto:callumrthompson@me.com">Get in touch</a></li>
+          <li>✉️ <a href="mailto:&#099;&#097;&#108;&#108;&#117;&#109;&#114;&#116;&#104;&#111;&#109;&#112;&#115;&#111;&#110;&#064;&#109;&#101;&#046;&#099;&#111;&#109;">Get in touch</a></li>
           <li>👥 <a href="https://www.linkedin.com/in/callumthompson/" target="_blank">Connect on LinkedIn</a></li>
           <li>⭐️ <a href="https://github.com/calrt" target="_blank">Explore my Github</a></li>
         </ul>
@@ -41,9 +42,8 @@
     "Traveller",
     "<u>Web Developer</u>"
   ];
-
-  var i = 0;
   
+  var i = 0;
   var roleRun = function () {
     if(i < roles.length) {
       roleSpan.innerHTML = roles[i];
@@ -52,9 +52,8 @@
       wave.classList.add("animate-wave")
     }
   }
-
   window.addEventListener('load', function() {
     document.body.classList.add("visible")
-    setTimeout(setInterval, 350, roleRun, 1000)
+    setTimeout(setInterval, 600, roleRun, 600)
   })
 </script>
