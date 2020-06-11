@@ -30,11 +30,12 @@
       <li>⭐️ <a href="https://github.com/calrt" target="_blank">Explore my Github</a></li>
     </ul>
   </div>
+  <div id="photo-credit">Background photograph by <a href="https://unsplash.com/@anniespratt">Annie Spratt</a></div>
 </body>
 </html>
 
 <script>
-  console.log("I hope you like what you see! Think something could be improved? I'd love to hear your feedback via email.")
+  console.log("I hope you like what you see! Think something could be improved? I'd love to hear your feedback via email.");
 
   var roleSpan = document.querySelector(".role");
   var wave = document.querySelector(".wave");
@@ -53,11 +54,11 @@
       roleSpan.innerHTML = roles[i];
       i++;
     } else {
-      wave.classList.add("animate-wave")
+      wave.classList.add("animate-wave");
     }
   }
   window.addEventListener('load', function() {
-    document.body.classList.add("visible")
-    setTimeout(setInterval, 600, roleRun, 800)
-  })
+    document.body.classList.add("visible");
+    setTimeout(setInterval, 600, roleRun, 800);
+  });
 </script>
