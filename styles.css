@@ -37,7 +37,7 @@ body {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: rgb(204, 204, 204);
 }
 
@@ -62,22 +62,22 @@ body.visible {
 }
 
 h1 {
-  font-size: 4.125rem;
+  font-size: 55px;
 }
 
 h2 {
   color: #FF5800;
-  font-size: 1.875rem;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 1.875px;
+  font-size: 30px;
 }
 
 ul {
-  margin-top: 2.5rem;
+  margin-top: 40px;
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 ul a {
