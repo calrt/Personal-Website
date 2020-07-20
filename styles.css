@@ -89,6 +89,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.underlined {
+  text-decoration: underline;
+}
+
 .animate-wave {
   animation-name: wave-animation;
   animation-timing-function: ease-in-out;
