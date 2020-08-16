@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/pomodoro/*"
-  to = "https://objective-hermann-9aa6d0.netlify.app"
+  to = "https://objective-hermann-9aa6d0.netlify.app/:splat"
   status = 200
   force = true
