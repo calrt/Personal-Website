@@ -3,3 +3,4 @@
   to = "https://objective-hermann-9aa6d0.netlify.app/:splat"
   status = 200
   force = true
+  query = {path = ":path"}
