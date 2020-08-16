@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/pomodoro"
+  to = "https://objective-hermann-9aa6d0.netlify.app"
+  status = 200
+  force = false
